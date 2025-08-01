@@ -7,7 +7,7 @@ import Toyota from "../assets/toyota.jpg";
 import Velar from "../assets/velar.jpg";
 import Hilux from "../assets/hilux.jpg";
 import BlueBMW from "../assets/bluebmv.jpg";
-import Benz from "../assets/Benz.jpg";
+import Benz from "../assets/benz.jpg";
 import RollsRoyce from "../assets/black.jpg";
 
 const mockCars = [
