@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import "./Home.css";
+import "./home.css";
 
 import bmv from "../assets/bmv.jpg";
 import suv from "../assets/suv.jpg";
