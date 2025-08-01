@@ -120,20 +120,30 @@
   background-color: #0056b3;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
-  .car-info-container {
-    flex-direction: column;
-    text-align: center;
+  /* Adjust input fields on mobile */
+  .form-large input {
+    max-width: 90%;       /* Make inputs responsive */
+    min-width: unset;     /* Remove fixed min-width */
+    padding: 0.9rem 1rem; /* Comfortable thumb size */
+    font-size: 1rem;      /* Slightly smaller text */
+    border-radius: 8px;   /* Softer corners */
+    margin: 0.6rem 0;     /* Consistent spacing */
   }
 
-  .car-image img {
+  /* Adjust button for mobile */
+  .bookcar-form button {
+    width: 90%;
+    padding: 0.9rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+  }
+
+  /* Center form properly */
+  .bookcar-form {
     width: 100%;
-    max-width: 300px;
-    margin-top: 2.5rem;
-  }
-
-  .car-details {
-    max-width: 90%;
+    align-items: center;
+    padding: 0 1rem;
   }
 }

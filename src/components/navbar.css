@@ -148,10 +148,12 @@
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex;
-    position: absolute;
-    top: 18px;
-    right: 18px;
-    z-index: 2100;
+    position: static;   
+    margin-left: auto;  
+  }
+
+  .navbar-container {
+    justify-content: space-between; 
   }
 
   .navbar-menu {
