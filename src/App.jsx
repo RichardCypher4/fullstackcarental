@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
@@ -15,10 +15,12 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        {/* Default page is now login */}
+       
+        <Route path="/" element={<Navigate to="/login" />} />
+
         <Route path="/login" element={<Login />} /> 
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<Home />} /> {/* Home moved to /home */}
+        <Route path="/home" element={<Home />} />
         <Route path="/rentcar" element={<RentCar />} />
         <Route path="/bookcar" element={<BookCar />} />  
         <Route path="/footer" element={<Footer />} /> 
