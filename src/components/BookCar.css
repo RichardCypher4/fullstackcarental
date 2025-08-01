@@ -47,7 +47,8 @@
 .car-image img {
   width: 320px;
   border-radius: 12px;
-  margin-right: 300px;
+  margin: 0 auto; /* Center horizontally */
+  display: block;
 }
 
 .car-details {
