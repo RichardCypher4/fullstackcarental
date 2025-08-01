@@ -1,0 +1,195 @@
+/* Footer container for testimonials and BMW banner (remains white) */
+.footer-container {
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Title */
+.footer-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #000;
+}
+
+.footer-title span {
+  color: #1e90ff;
+}
+
+/* Testimonials Cards */
+.testimonial-cards {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-card h4 {
+  color: #1e90ff;
+  margin-bottom: 0.3rem;
+}
+
+.testimonial-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* BMW Banner */
+.bmw-banner {
+  background: #1e90ff;
+  color: white;
+  border-radius: 12px;
+  margin: 3rem auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  max-width: 900px;
+}
+
+.bmw-text {
+  text-align: left;
+}
+
+.bmw-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.bmw-image {
+  width: 220px;
+  position: absolute;
+  right: -40px;
+  top: -30px;
+}
+
+/* About Section Full Width Blue */
+.about-section {
+  background-color: #1e90ff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  text-align: left;
+  padding: 3rem 1rem;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-column {
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-column h4 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  border-bottom: 2px solid white; /* line under heading */
+  padding-bottom: 0.3rem;
+  width: 100%;
+}
+
+.about-column p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+  /* BMW Banner: stack content vertically on tablet */
+  .bmw-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .bmw-text {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .bmw-image {
+    position: static;
+    width: 180px;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* About section stacks vertically on mobile */
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .about-column {
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .about-column h4 {
+    width: auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Extra small screens adjustments */
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .bmw-banner {
+    padding: 1.5rem 1rem;
+  }
+
+  .bmw-text h3 {
+    font-size: 1.4rem;
+  }
+
+  .bmw-image {
+    width: 150px;
+  }
+}

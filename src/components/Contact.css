@@ -1,0 +1,118 @@
+.contact-section {
+  background: #f8faff; /* Full-width light background */
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.contact-container {
+  display: flex;
+  gap: 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between; /* Aligns text & form evenly */
+  padding: 0 1rem;
+}
+
+.contact-info {
+  flex: 1 1 320px;
+  min-width: 260px;
+  max-width: 400px;
+  text-align: left; /* Ensures straight alignment like About Us */
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #1e90ff; /* Straight line under heading */
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.contact-info h2 span {
+  color: #1e90ff;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  color: #007bff;
+  font-size: 1.05rem;
+}
+
+.contact-info li {
+  margin-bottom: 0.7rem;
+}
+
+/* Form styles (unchanged) */
+.contact-form {
+  flex: 1 1 340px;
+  min-width: 260px;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1.5px solid #b3c6e0;
+  border-radius: 10px;
+  font-size: 1.08rem;
+  background: #fafdff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  resize: none;
+}
+
+.contact-form button {
+  background-color: #1e90ff;
+  color: #fff;
+  border: none;
+  padding: 1rem 0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.contact-form button:hover {
+  background-color: #1558b0;
+}
+
+.contact-success {
+  color: #28a745;
+  font-size: 1.1rem;
+  margin-top: 0.7rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  .contact-info h2 {
+    border-bottom: none; /* Remove line center mobile */
+  }
+}
